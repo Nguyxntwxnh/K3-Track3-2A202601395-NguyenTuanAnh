@@ -1,0 +1,166 @@
+{
+  "integrity": {
+    "nodes": 277,
+    "edges": 181,
+    "invalid_provenance": 0
+  },
+  "top_supernodes": [
+    {
+      "id": "fb0f4df56fab164ec48722f0",
+      "name": "Microsoft",
+      "type": "Company",
+      "degree": 4
+    },
+    {
+      "id": "11843b26722e08da819d463e",
+      "name": "IDE Technologies",
+      "type": "Company",
+      "degree": 3
+    },
+    {
+      "id": "3dc06a89411b15a3de2ec182",
+      "name": "Walt Disney Co.",
+      "type": "Company",
+      "degree": 3
+    },
+    {
+      "id": "e6c3db5c28c9a15bfafd2e04",
+      "name": "Apple",
+      "type": "Company",
+      "degree": 3
+    },
+    {
+      "id": "539ad608da86e2f14b52da4b",
+      "name": "Ridgewood Infrastructure",
+      "type": "Company",
+      "degree": 3
+    }
+  ],
+  "audit_samples": [
+    {
+      "type": "Company",
+      "entity_a": "information services group inc.",
+      "entity_b": "information services group inc",
+      "similarity": 0.9829,
+      "decision": "MERGE_VECTOR",
+      "reason": "HIGH_SIM_GUARD_PASS"
+    },
+    {
+      "type": "Company",
+      "entity_a": "l&t technology services",
+      "entity_b": "l&t technology services limited",
+      "similarity": 0.9258,
+      "decision": "MERGE_VECTOR",
+      "reason": "HIGH_SIM_GUARD_PASS"
+    }
+  ],
+  "rejected_guards": [],
+  "unresolved_mentions_sample": [],
+  "eval_summary": [
+    {
+      "Loại câu hỏi": "cross-doc",
+      "Metric": "Comprehensiveness",
+      "Flat RAG": 3.667,
+      "GraphRAG": 3.333,
+      "Nhận xét phân tích": "Hai phương pháp có hiệu quả tương đương."
+    },
+    {
+      "Loại câu hỏi": "cross-doc",
+      "Metric": "Faithfulness",
+      "Flat RAG": 4.333,
+      "GraphRAG": 4.0,
+      "Nhận xét phân tích": "Hai phương pháp có hiệu quả tương đương."
+    },
+    {
+      "Loại câu hỏi": "cross-doc",
+      "Metric": "Multi-hop reasoning",
+      "Flat RAG": 3.667,
+      "GraphRAG": 3.5,
+      "Nhận xét phân tích": "Hai phương pháp có hiệu quả tương đương."
+    },
+    {
+      "Loại câu hỏi": "cross-doc",
+      "Metric": "Latency (s)",
+      "Flat RAG": 10.081,
+      "GraphRAG": 13.509,
+      "Nhận xét phân tích": "Flat RAG nhanh hơn / ít token hơn."
+    },
+    {
+      "Loại câu hỏi": "cross-doc",
+      "Metric": "Token usage",
+      "Flat RAG": 1193.667,
+      "GraphRAG": 1009.333,
+      "Nhận xét phân tích": "Chi phí token tương đương."
+    },
+    {
+      "Loại câu hỏi": "factoid",
+      "Metric": "Comprehensiveness",
+      "Flat RAG": 5.0,
+      "GraphRAG": 5.0,
+      "Nhận xét phân tích": "Hai phương pháp có hiệu quả tương đương."
+    },
+    {
+      "Loại câu hỏi": "factoid",
+      "Metric": "Faithfulness",
+      "Flat RAG": 5.0,
+      "GraphRAG": 5.0,
+      "Nhận xét phân tích": "Hai phương pháp có hiệu quả tương đương."
+    },
+    {
+      "Loại câu hỏi": "factoid",
+      "Metric": "Multi-hop reasoning",
+      "Flat RAG": 5.0,
+      "GraphRAG": 4.5,
+      "Nhận xét phân tích": "Flat RAG tốt hơn; đồ thị có thể bị thiếu seed hoặc nhiễu."
+    },
+    {
+      "Loại câu hỏi": "factoid",
+      "Metric": "Latency (s)",
+      "Flat RAG": 8.158,
+      "GraphRAG": 5.097,
+      "Nhận xét phân tích": "Chi phí token tương đương."
+    },
+    {
+      "Loại câu hỏi": "factoid",
+      "Metric": "Token usage",
+      "Flat RAG": 871.5,
+      "GraphRAG": 626.0,
+      "Nhận xét phân tích": "Chi phí token tương đương."
+    },
+    {
+      "Loại câu hỏi": "multi-hop",
+      "Metric": "Comprehensiveness",
+      "Flat RAG": 3.0,
+      "GraphRAG": 2.714,
+      "Nhận xét phân tích": "Hai phương pháp có hiệu quả tương đương."
+    },
+    {
+      "Loại câu hỏi": "multi-hop",
+      "Metric": "Faithfulness",
+      "Flat RAG": 3.143,
+      "GraphRAG": 4.429,
+      "Nhận xét phân tích": "GraphRAG vượt trội rõ rệt nhờ liên kết tri thức xuyên văn bản."
+    },
+    {
+      "Loại câu hỏi": "multi-hop",
+      "Metric": "Multi-hop reasoning",
+      "Flat RAG": 3.143,
+      "GraphRAG": 3.0,
+      "Nhận xét phân tích": "Hai phương pháp có hiệu quả tương đương."
+    },
+    {
+      "Loại câu hỏi": "multi-hop",
+      "Metric": "Latency (s)",
+      "Flat RAG": 12.397,
+      "GraphRAG": 13.87,
+      "Nhận xét phân tích": "Flat RAG nhanh hơn / ít token hơn."
+    },
+    {
+      "Loại câu hỏi": "multi-hop",
+      "Metric": "Token usage",
+      "Flat RAG": 1283.429,
+      "GraphRAG": 996.714,
+      "Nhận xét phân tích": "Chi phí token tương đương."
+    }
+  ]
+}
